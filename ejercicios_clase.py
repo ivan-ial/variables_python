@@ -27,19 +27,28 @@ def ej1():
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
 
+    print ( numero_1, numero_2)
+
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_1, numero_2
+    #suma = numero_1 + numero_2
+
+    #resta = numero_1 - numero_2 
+
+    #multiplicacion = numero_1 * numero_2
+
+    #division = numero_1 / numero_2
+
     # Imprima en pantalla todos los resultados con el siguiente formato de ejemplo:
     # El resultado de sumar 4 y 2 es 6
-
     # Suma
-
+    print('El resultado de sumar' ,numero_1, 'y' ,numero_2, 'es',suma)
     # Resta
-
+    print('El resultado de restar',numero_1,'y',numero_2,'es',resta)
     # División
-
+    print('El resultado dividir',numero_1,'y',numero_2,'es',division)
     # Multiplicación
-
+    print('El resultado multiplicar',numero_1,'y',numero_2,'es',multiplicacion)
 def ej2():
     # Ejercicios de práctica numérica
 
@@ -52,9 +61,18 @@ def ej2():
 
     # Alumno: Imprima en pantalla los dos números reales solicitados
     # print(....)
-
+    print( numero_3, numero_4)
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_3, numero_4
+    
+    suma = numero_3 + numero_4
+
+    resta = numero_3 - numero_4 
+
+    multiplicacion = numero_3 * numero_4
+
+    division = numero_3 / numero_4
+
     # Imprima en pantalla todos los resultados con el siguiente formato de ejemplo:
     # El resultado de sumar 4 y 2 es 6
 
@@ -121,8 +139,8 @@ def ej4():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    #ej2()
+    #ej1()
+    ej2()
     #ej3()
     #ej4()
 
