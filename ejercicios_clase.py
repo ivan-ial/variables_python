@@ -31,13 +31,13 @@ def ej1():
 
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_1, numero_2
-    #suma = numero_1 + numero_2
+    suma = numero_1 + numero_2
 
-    #resta = numero_1 - numero_2 
+    resta = numero_1 - numero_2 
 
-    #multiplicacion = numero_1 * numero_2
+    multiplicacion = numero_1 * numero_2
 
-    #division = numero_1 / numero_2
+    division = numero_1 / numero_2
 
     # Imprima en pantalla todos los resultados con el siguiente formato de ejemplo:
     # El resultado de sumar 4 y 2 es 6
@@ -62,6 +62,7 @@ def ej2():
     # Alumno: Imprima en pantalla los dos números reales solicitados
     # print(....)
     print( numero_3, numero_4)
+
     # Alumno: Calcule la suma, resta, división y multiplicación de los números ingresados
     # numero_3, numero_4
     
@@ -77,14 +78,14 @@ def ej2():
     # El resultado de sumar 4 y 2 es 6
 
     # Suma
-
+    print('El resultado de sumar' ,numero_3, 'y' ,numero_4, 'es',suma)
     # Resta
-
+    print('El resultado de restar',numero_3,'y',numero_4,'es',resta)
     # División
-
+    print('El resultado dividir',numero_3,'y',numero_4,'es',division)
     # Multiplicación
-
-
+    print('El resultado multiplicar',numero_3,'y',numero_4,'es',multiplicacion)
+    
 def ej3():
     # Ejemplos variables de texto
 
@@ -96,12 +97,19 @@ def ej3():
     print('Ingrese su apellido/s:')
     apellido = str(input())
 
-    # Imprima su nombre completo
-
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
 
+    nombre_completo = (nombre + apellido)
+
+    # Imprima su nombre completo
+
+    print(nombre, apellido)
+
     # Imprimir la cantidad de letras que posee su nombre completo
+    nombre_completo_len = len(nombre_completo)
+    print(nombre_completo, 'tiene',nombre_completo_len,'caracteres')
+
 
 def ej3():
     # Ejemplos variables de texto
@@ -117,6 +125,11 @@ def ej3():
     print('Ingrese palabra 3:')
     palabra_3 = str(input())
 
+    caracter_inicial_1 = palabra_1[0]
+    caracter_inicial_2 = palabra_2[0]
+    caracter_inicial_3 = palabra_3[0]
+
+    print(caracter_inicial_1 + caracter_inicial_2 + caracter_inicial_3)
 
     # De cada palabra debe tomar la primera letra y armar el acrónimo
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
@@ -132,6 +145,21 @@ def ej4():
     print('Ingrese palabra 2:')
     palabra_2 = str(input())
 
+    sub_text1_len = len(palabra_1)
+
+    #print(sub_text1_len)
+
+    sub_text2_len = len(palabra_2)
+
+    #print(sub_text2_len)
+
+    palabra_3 = palabra_1[:4]
+
+    palabra_4 = palabra_2[1:sub_text2_len]
+
+    print(palabra_3 + palabra_4)
+    
+
     # De la primera palabra tome las primeras tres letras, utilice el operador :
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
     # Formar una nueva palabra con los recortes solicitados
@@ -140,7 +168,7 @@ def ej4():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     #ej1()
-    ej2()
+    #ej2()
     #ej3()
     #ej4()
 
