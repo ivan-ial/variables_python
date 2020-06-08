@@ -31,6 +31,29 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    print('Ingrese el primer número real a operar:')
+
+    numero_1 = int(input()) 
+
+    print('Ingrese el segundo numero real para operar:')
+
+    numero_2 = int(input())
+
+    suma = numero_1 + numero_2
+
+    resta = numero_1 - numero_2 
+
+    multiplicacion = numero_1 * numero_2
+
+    division = numero_1 / numero_2
+   # Suma
+    print('El resultado de sumar' ,numero_1, 'y' ,numero_2, 'es',suma)
+    # Resta
+    print('El resultado de restar',numero_1,'y',numero_2,'es',resta)
+    # División
+    print('El resultado dividir',numero_1,'y',numero_2,'es',division)
+    # Multiplicación
+    print('El resultado multiplicar',numero_1,'y',numero_2,'es',multiplicacion)
 
 def ej2():
     # Ejercicios de práctica numérica y cadenas
@@ -50,6 +73,23 @@ def ej2():
       está hablando.
 
     '''
+    print('Ingrese su nombre/s y apellido/s:')
+    nombre = str(input())
+
+    print('Ingrese su D.N.I (sin puntos):')
+    DNI = int(input())
+
+    print('Ingrese su edad:')
+    Edad = int(input())
+
+    print('Ingrese su altura:')
+    Altura = float(input())
+
+    print("Nombre completo:",nombre, "D.N.I:",DNI )
+
+    print("Nombre completo:", nombre, "Edad:",Edad, "Altura:",Altura)
+
+
 def ej3():
     # Ejercicios de práctica con cadenas
 
@@ -79,6 +119,31 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
         
     '''
+    print("Ingrese nombre/s y apellido/s del padre")
+    padre_1 = str(input())
+    
+
+    print("Ingrese nombre/s y apellido/s de la madre")
+    padre_2 = str(input())
+
+    print( "Ingrese nombre/s de su hijo")
+    hijo = str(input())
+
+    print(padre1lista)
+
+    padre2lista = padre_2.split()
+
+    #print(padre2lista)
+
+    apellido_padre = padre1lista [2]
+
+    #print(apellido_padre)
+
+    apellido_madre = padre2lista [2]
+
+    #print(apellido_madre)
+
+    print(hijo, apellido_padre, apellido_madre)
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -111,6 +176,28 @@ def ej4():
         
     '''
 
+    print('Ingrese por favor el primer nombre y el apellido de la primera persona')
+    persona_1 = str(input())
+
+    print('Ingrese por favor el primer nombre y el apellido de la segunda persona')
+    persona_2 = str(input())
+
+    persona1_lista = persona_1.split()
+
+    persona2_lista = persona_2.split()
+
+    apellido_1 = persona1_lista [1]
+
+    apellido_2 = persona2_lista [1]
+
+    parientes_1 = persona2_lista [1] in persona1_lista
+
+    if parientes_1:
+       print('Las personas son parientes')
+    else:
+       print('las personas no son parientes')
+
+
 def ej5():
     # Ejercicios de práctica con cadenas
        
@@ -137,10 +224,19 @@ def ej5():
     
 
     '''
+    print('Ingrese su nombre completo')
+
+    nombre_completo = str(input())
+
+    print(nombre_completo.lower())
+
+    print(nombre_completo.upper())
+
+    print(nombre_completo.capitalize())
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    #ej1()
     #ej2()
     #ej3()
     #ej4()
